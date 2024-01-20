@@ -2574,6 +2574,15 @@
         source:[ "/servicesupport/analygarden/:program?",
           "/" ],
         target:"/cfachina/servicesupport/analygarden/:program?" } ] },
+  "cfmmc.com":{ _name:"中国期货市场监控中心",
+    ".":[ { title:"栏目",
+        docs:"https://docs.rsshub.app/routes/finance#zhong-guo-qi-huo-shi-chang-jian-kong-zhong-xin-lan-mu",
+        source:[ "/:id*" ],
+        target:(params) => {
+                    const id = params.id.replace(/\/index\.shtml/, '');
+
+                    return `/cfmmc${id ? `/${id}` : ''}`;
+                } } ] },
   "cgtn.com":{ _name:"中国环球电视网 CGTN",
     ".":[ { title:"播客",
         docs:"https://docs.rsshub.app/routes/traditional-media#zhong-guo-huan-qiu-dian-shi-wang",
@@ -5815,6 +5824,12 @@
         docs:"https://docs.rsshub.app/routes/government#bei-jing-shi-wei-sheng-jian-kang-wei-yuan-hui",
         source:"/xwzx_20031/:caty",
         target:"/gov/beijing/mhc/:caty" } ] },
+  "bjedu.gov.cn":{ _name:"北京市教育委员会",
+    gh:[ { title:"教育科学规划网 - 通用",
+        docs:"https://docs.rsshub.app/routes/government#bei-jing-shi-jiao-yu-ke-xue-gui-hua-wang",
+        source:[ "/ghsite/:urlPath/index.html",
+          "/ghsite/:urlPath" ],
+        target:"/gov/beijing/bjedu/gh/:urlPath" } ] },
   "bphc.com.cn":{ _name:"北京保障房中心有限公司",
     gycpt:[ { title:"北京市共有产权住房租赁服务平台",
         docs:"https://docs.rsshub.app/routes/government#bei-jing-shi-bao-zhang-fang-zhong-xin-you-xian-gong-si",

@@ -1195,6 +1195,9 @@
         "TonyRL"
     ],
     "/cfan/news": [],
+    "/cfmmc/:id?": [
+        "nczitzk"
+    ],
     "/cgtn/most/:type?/:time?": [],
     "/cgtn/opinions": [],
     "/cgtn/podcast/:category/:id": [
@@ -2596,6 +2599,9 @@
     ],
     "/gov/anhui/kjt/:path?": [
         "nczitzk"
+    ],
+    "/gov/beijing/bjedu/gh/:urlPath?": [
+        "TonyRL"
     ],
     "/gov/beijing/bjeea/:type": [],
     "/gov/beijing/bphc/:channel": [
