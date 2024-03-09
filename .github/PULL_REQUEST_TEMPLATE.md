@@ -15,7 +15,7 @@ Fail to comply will result in your pull request being closed automatically.
 请在 `routes` 区域填写以 / 开头的完整路由地址，否则你的 PR 将会被无条件关闭。
 如果路由包含在文档中列出可以完全穷举的参数（例如分类），请依次全部列出。
 
-```route
+```routes
 /some/route
 /some/other/route
 /dont/use/this/or/modify/it
@@ -32,7 +32,7 @@ If your changes are not related to route, please fill in `routes` section with `
 ## New RSS Route Checklist / 新 RSS 路由检查表
   
 - [ ] New Route / 新的路由
-  - [ ] Follows [v2 Script Standard](https://docs.rsshub.app/joinus/advanced/script-standard) / 跟随 [v2 路由规范](https://docs.rsshub.app/zh/joinus/advanced/script-standard)
+  - [ ] Follows [Script Standard](https://docs.rsshub.app/joinus/advanced/script-standard) / 跟随 [路由规范](https://docs.rsshub.app/zh/joinus/advanced/script-standard)
 - [ ] Documentation / 文档说明
 - [ ] Full text / 全文获取
   - [ ] Use cache / 使用缓存

@@ -286,10 +286,10 @@ GitHub provides some official RSS feeds:
 
 ### Files Commits {#github-files-commits}
 
-<Route author="zengxs" example="/github/file/DIYgod/RSSHub/master/lib/router.js" path="/github/file/:user/:repo/:branch/:filepath+" paramsDesc={['User name', 'Repo name', 'Branch name', 'File path']} radar="1">
+<Route author="zengxs" example="/github/file/DIYgod/RSSHub/master/lib/router.ts" path="/github/file/:user/:repo/:branch/:filepath+" paramsDesc={['User name', 'Repo name', 'Branch name', 'File path']} radar="1">
   | User name | Repo name | Branch name | File path       |
   | --------- | --------- | ----------- | --------------- |
-  | `DIYgod`  | `RSSHub`  | `master`    | `lib/router.js` |
+  | `DIYgod`  | `RSSHub`  | `master`    | `lib/router.ts` |
 
   > -   If there are special characters such as `/` in the **branch name**, they need to be encoded with urlencode, usually `/` needs to be replaced with `%2f`
   >
@@ -501,6 +501,14 @@ Subscribe to the updates (threads and submission) from a paritcular Hacker News 
 ### Project Funded {#issue-hunt-project-funded}
 
 <Route author="running-grass" radar="1" example="/issuehunt/funded/DIYgod/RSSHub" path="/issuehunt/funded/:username/:repo" paramsDesc={['Github user/org','Repository name']} />
+
+## Kong API 网关平台 {#kong-api-wang-guan-ping-tai}
+
+[Kong](https://konghq.com/) 是一家开源的 API 网关服务商，此处收集其官网的最新博客文章。
+
+### 博客最新文章 {#kong-api-wang-guan-ping-tai-bo-ke-zui-xin-wen-zhang}
+
+<Route author="piglei" example="/konghq/blog-posts" path="/konghq/blog-posts" />
 
 ## LeetCode {#leetcode}
 
@@ -1133,4 +1141,8 @@ Stay up to date on the latest React news, tutorials, resources, and more. Delive
 
 ### 周刊 - JavaScript {#yin-ji-zhong-wen-zhou-kan-javascript}
 
-<Route author="daijinru" example="/docschina/jsweekly" path="/docschina/jsweekly" radar="1" />
+<Route author="hestudy" example="/docschina/weekly" path="/docschina/weekly/:category?" paramsDesc={['周刊分类，见下表，默认为js']}>
+  | javascript | node | react |
+  | ---------- | ---- | ----- |
+  | js         | node | react |
+</Route>
